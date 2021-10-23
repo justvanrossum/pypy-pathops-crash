@@ -6,6 +6,7 @@ from pathops.operations import union
 def randCoord():
     return randint(0, 800), randint(0, 800)
 
+
 def randShape(pen):
         pen.moveTo(randCoord())
         for k in range(3, 8):
@@ -18,9 +19,9 @@ def randShape(pen):
 
 seed(0)
 
-for i in range(100):
-    print("---", i)
-
+N = 300
+for i in range(N):
+    print(f"--- {i} of {N}")
     path = []
     for j in range(randint(2, 4)):
         sub = Path()
@@ -29,4 +30,3 @@ for i in range(100):
 
     result = Path()
     union(path, result.getPen())
-    # print(result)
