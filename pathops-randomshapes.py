@@ -17,7 +17,7 @@ def randShape(pen):
         pen.closePath()
 
 
-seed(0)
+# seed(0)
 
 N = 300
 for i in range(N):
