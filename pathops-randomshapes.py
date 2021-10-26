@@ -19,7 +19,7 @@ def randShape(pen):
 
 # seed(0)
 
-N = 300
+N = 30000
 for i in range(N):
     print(f"--- {i} of {N}")
     path = []
